@@ -15,6 +15,7 @@ function preload(){
   sparkyImg = loadImage('Sparky.png');
   spiderImg = loadImage('Spidey.png');
   lampImg = loadImage('Lamp.png');
+  starImg = loadImage('Star.png');
   largeTreeImg = loadImage('bigTree.png');
   smallTreeImg = loadImage('Small_Tree.png');
   lightImg = loadImage('Light.png');
@@ -42,8 +43,9 @@ function setup() {
   lamp.image = lampImg;
 
 
-  lamp2 = createSprite(width-50, height-80, 50, 50);
-  lamp2.image = lampImg;
+  lamp2 = createSprite(width-50, height-150, 50, 50);
+  lamp2.image = starImg;
+  lamp2.scale = 1.3;
 
 
   spider = createSprite(width/2, 50, 50, 30);
@@ -100,7 +102,7 @@ function draw() {
     ML = true;
     MLSetup();
     console.log("ML Activated");
-    alert("Hand Tracking Mode Activated. Press r to return to WASD mode."); // Optional
+    alert("Hand Tracking Mode Activated. Press r to refresh and return to WASD mode."); // Optional
   }
     // Control mode
     if (ML) {
@@ -251,7 +253,7 @@ function drawIntroPopup() {
 
 
   textSize(11);
-  text("- Use JIKL to move the Light\n- Use WASD to move Sparky\n- Press 'E' to activate hand tracking\n- Wave at the screen to control the Light", width / 2, height / 2 - 10);
+  text("- Use JIKL to move the Light\n- Use WASD to move Sparky\n- Press 'E' to activate hand tracking\n- Wave at the screen to control the Light \n Objective: Help Sparky safely find his way to the star \n to collect stardust and regain his light!", width / 2, height / 2 - 10);
 
 
 
@@ -352,7 +354,7 @@ function win() {
   textAlign(CENTER, CENTER);
   textSize(14);
   textFont('monospace');
-  text("Finding the Light", width / 2, height / 2 - 105);
+  text("You helped Sparky regain his light!", width / 2, height / 2 - 105);
 
 
   // Close button (X)

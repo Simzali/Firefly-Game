@@ -1,5 +1,4 @@
 # Firefly Game Code
-This is a place for you to start building your Pong Game!
 
 ###  Project Description
 Move the light using your hand or WASD, move the firefly using the arrow keys, and avoid the obstacles!
@@ -23,10 +22,6 @@ Drag in assets, like images, to add them to your project. If you are adding an i
 ### ← index.html
 
 The HTML file contains HTML code that sets up a webpage for our game. We also add libraries in this file using HTML tags.
-
-### ← README.md
-
-That's this file. This is the place to tell people more about what your game does and how you built it. 
 
 ### ← style.css
 

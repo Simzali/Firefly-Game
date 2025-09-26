@@ -1,12 +1,12 @@
-# Pong Game Starter Code
+# Firefly Game Code
 This is a place for you to start building your Pong Game!
 
 ###  Project Description
-Create a game where you move the paddle from left to right to try and keep the bouncing ball from touching the ground. If it touches the ground you lose the game. 
+Move the light using your hand or WASD, move the firefly using the arrow keys, and avoid the obstacles!
 
 ###  Attributions
-*If you used any code, ideas, images, or resources from another person or group of people, tell us about it here. Make sure it is in the public domain, has a license that allows you to use it, or is one of your own.
-- Add here if applicable
+Tensor flow hand tracking library was used
+P5play javascript library used
 
 ---
 
